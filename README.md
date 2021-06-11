@@ -1,4 +1,7 @@
 # Laravel Boilerplate
+Simple laravel essentials to kik :rocket: your new project.
+
+### Features
 
 - Fortify Authentication :lock:
     - Login & Registration

@@ -1,5 +1,5 @@
 # Laravel Boilerplate
-Simple laravel essentials to kik :rocket: your new project.
+Simple laravel essentials to kik start your new project. :rocket:
 
 ### Features
 

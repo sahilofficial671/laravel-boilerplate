@@ -8,4 +8,4 @@
 - Views with components for Frontend :heart:
     - Dashboard
 
-- Tailwind CSS, Alpine.js, Laravel Mix, Axios
+- Tailwind CSS, Alpine.js, Laravel Mix, Axios :art:

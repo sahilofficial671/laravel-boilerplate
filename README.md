@@ -15,10 +15,15 @@ Simple laravel essentials to kik start your new project. :rocket:
 
 ## Components
 - [Button](#button)
+- [Cards](#cards)
+- [Input](#input)
+- [Select](#select)
+- [Textarea](#textarea)
+- [Back](#back)
 
 ## Button
 
-###  Type
+####  Type
 ```vue
 <x-button buttonType="primary" />
 ```
@@ -39,9 +44,116 @@ light          => bg-gray-200 text-gray-600 ring-gray-200 focus:border-gray-300 
 light-success  => bg-green-200 text-green-600 ring-green-200 focus:border-green-300 active:bg-green-300 border-green-300 border-opacity-60
 ```
 
-###  Height
+####  Height
 ```vue
 <x-button height="h-14" />
 ```
 
 > Default: `h-10`
+
+## Cards
+
+#### Header
+```vue
+<x-card>
+    <x-slot name="header"> .. </x-slot>
+</x-card>
+```
+
+#### Body
+```vue
+<x-card>
+    <x-slot name="body"> .. </x-slot>
+</x-card>
+```
+
+####  Width
+
+```vue
+<x-card width="sm:max-w-lg">
+    ...
+</x-card>
+```
+> Default: `sm:max-w-md`
+
+##### Common Classes:
+```css
+w-full mt-2 sm:mt-4 md:mt-6 bg-white shadow-md overflow-hidden rounded-lg
+```
+
+## Input
+####  Type
+
+```vue
+<x-input type="email" />
+```
+
+> Default: `text`
+
+##### Common Classes:
+```css 
+shadow-sm border-gray-300 focus:ring focus:ring-opacity-50
+```
+
+##### Available Options:
+```css
+text     =>  rounded-md focus:border-blue-300 focus:ring-blue-200 text-gray-700
+password =>  rounded-md focus:border-green-300 focus:ring-green-200 text-gray-700
+number   =>  rounded-md focus:border-green-300 focus:ring-green-200 text-gray-700
+email    =>  rounded-md focus:border-green-300 focus:ring-green-200 text-gray-700
+checkbox =>  rounded h-5 w-5 checked:text-blue-600 checked:border-transparent text-blue-600 focus:outline-none focus:ring-blue-200 cursor-pointer
+```
+
+## Select
+
+```vue
+<x-select> ... </x-select>
+```
+
+##### Common Classes:
+```css 
+w-full shadow-sm border-gray-300 focus:ring focus:ring-opacity-50 rounded-md focus:border-green-300 focus:ring-green-200 cursor-pointer
+```
+
+## Textarea
+```vue
+<x-textarea> ... </x-textarea>
+```
+
+####  Type
+
+```vue
+<x-textarea value="This is textarea value." />
+<x-textarea value="This is textarea value."> ... </x-textarea>
+```
+
+##### Common Classes:
+```css 
+rounded-md shadow-sm border-gray-300 focus:border-green-300 focus:ring focus:ring-green-200 focus:ring-opacity-50ounded-md shadow-sm border-gray-300 focus:border-green-300 focus:ring focus:ring-green-200 focus:ring-opacity-50
+```
+
+## Back
+
+Back button used by user to go to previous page Ex: `< Back `
+```vue
+<x-back />
+```
+
+####  Value
+
+```vue
+<x-back value="Go back" /> 
+```
+Output: `< Go back`
+
+> Default: `Back`
+
+##### Common Classes:
+```css 
+ml-2 items-center hover:bg-gray-50 bg-opacity-50 rounded inline-flex
+```
+
+##### Text Classes:
+```css
+text-sm text-gray-600 hover:text-gray-900
+```

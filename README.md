@@ -1,4 +1,7 @@
 # Laravel Boilerplate
+
+![https://github.com/sahilofficial671/laravel-boilerplate/actions?query=workflow%3ABuild"](https://github.com/sahilofficial671/laravel-boilerplate/actions/workflows/build.yml/badge.svg)
+
 Simple laravel essentials to kik start your new project. :rocket:
 
 ### Features

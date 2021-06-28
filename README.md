@@ -19,11 +19,13 @@ Simple laravel essentials to kik start your new project. :rocket:
 ## Components
 - [Button](#button)
 - [Cards](#cards)
-- [Input](#input)
-- [Select](#select)
-- [Textarea](#textarea)
-- [Datetime](#datetime)
-- [Back](#back)
+- Inputs
+    - [Input](#input)
+    - [Select](#select)
+    - [Textarea](#textarea)
+    - [Datetime](#datetime)
+    - [Back](#back)
+- [Modal](#modal)
 
 ## Button
 
@@ -138,13 +140,13 @@ rounded-md shadow-sm border-gray-300 focus:border-green-300 focus:ring focus:rin
 
 ## DateTime
 ```vue
-<x-textarea> ... </x-textarea>
+<x-datetime> ... </x-datetime>
 ```
 
 ####  Type
 
 ```vue
-<x-datetime name="date_type_name" />
+<x-datetime type="date_type_name" />
 ```
 
 > Default: `text`
@@ -204,3 +206,65 @@ ml-2 items-center hover:bg-gray-50 bg-opacity-50 rounded inline-flex
 ```css
 text-sm text-gray-600 hover:text-gray-900
 ```
+
+## Modal
+```vue
+<x-modal> ... </x-modal>
+```
+
+####  Type
+
+```vue
+<x-modal type="warning" />
+```
+
+> Default: `info`
+> Base icon for modal will also be added according to type of modal
+
+##### Available Options:
+```css
+info      =>  icon_classes => text-blue-600,  'icon_container_class' => 'bg-blue-100'
+danger    =>  icon_classes => text-red-600,  'icon_container_class' => 'bg-red-100'
+warning   =>  icon_classes => text-yellow-600,  'icon_container_class' => 'bg-yellow-100'
+success   =>  icon_classes => text-green-600, 'icon_container_class' => 'bg-green-100'  
+```
+
+####  Cancel
+
+```vue
+<x-modal cancel="Discard" />
+```
+
+> Default: `Cancel`
+> It is the text of button which hides the modal
+
+####  Toggle
+
+```vue
+<x-modal toggle="toggleable_value | {{ toggleable_value }}" />
+```
+
+> Default: `false`
+> Toggle key helps cancel button to hide modal.
+
+####  Header
+
+```vue
+<x-modal toggle="toggleable_value type="success">
+    <x-slot name="header">
+        ...
+    </x-slot>
+</x-modal>
+```
+
+####  Body
+
+```vue
+<x-modal toggle="toggleable_value type="success">
+    <x-slot name="body">
+        ...
+    </x-slot>
+</x-modal>
+```
+
+

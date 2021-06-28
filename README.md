@@ -22,6 +22,7 @@ Simple laravel essentials to kik start your new project. :rocket:
 - [Input](#input)
 - [Select](#select)
 - [Textarea](#textarea)
+- [Datetime](#datetime)
 - [Back](#back)
 
 ## Button
@@ -134,6 +135,49 @@ w-full shadow-sm border-gray-300 focus:ring focus:ring-opacity-50 rounded-md foc
 ```css 
 rounded-md shadow-sm border-gray-300 focus:border-green-300 focus:ring focus:ring-green-200 focus:ring-opacity-50ounded-md shadow-sm border-gray-300 focus:border-green-300 focus:ring focus:ring-green-200 focus:ring-opacity-50
 ```
+
+## DateTime
+```vue
+<x-textarea> ... </x-textarea>
+```
+
+####  Type
+
+```vue
+<x-datetime name="date_type_name" />
+```
+
+> Default: `text`
+
+####  isHidden
+
+```vue
+<x-datetime isHidden="true|false" />
+```
+> Default: `false`
+
+####  Placeholder
+
+```vue
+<x-datetime placeholder="Select schedule date" />
+```
+
+> Default: `Select date`
+
+####  Value
+
+```vue
+<x-datetime value="value for input field" />
+```
+
+> Default: `empty|blank`
+
+
+##### Common Classes:
+```css 
+w-full shadow-sm border-gray-300 focus:ring focus:ring-opacity-50 rounded-md focus:border-green-300 focus:ring-green-200 text-sm text-gray-700 cursor-pointer
+```
+
 
 ## Back
 

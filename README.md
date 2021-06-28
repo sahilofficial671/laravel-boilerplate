@@ -25,6 +25,7 @@ Simple laravel essentials to kik start your new project. :rocket:
     - [Select](#select)
     - [Textarea](#textarea)
     - [Datetime](#datetime)
+- [Pill](#pill)
 - [Back](#back)
 
 
@@ -268,4 +269,37 @@ success   =>  icon_classes => text-green-600, 'icon_container_class' => 'bg-gree
 </x-modal>
 ```
 
+## Pill
+```vue
+<x-pill> ... </x-pill>
+```
+
+####  Type
+
+```vue
+<x-pill type="warning" />
+```
+
+> Default: `info`
+
+##### Available Options:
+```css
+info      =>  bg-indigo-100 text-indigo-600,
+danger    =>  bg-red-100 text-red-600,
+warning   =>  bg-yellow-100 text-yellow-600,
+success   =>  bg-green-100 text-green-600,
+```
+
+####  Value
+
+```vue
+<x-pill value="Mobile" />
+```
+
+> Default: `Information`
+
+##### Common Classes:
+```css
+text-xs font-semibold p-1 rounded-md
+```
 

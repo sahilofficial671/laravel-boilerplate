@@ -19,13 +19,14 @@ Simple laravel essentials to kik start your new project. :rocket:
 ## Components
 - [Button](#button)
 - [Cards](#cards)
-- Inputs
+- [Modal](#modal)
+- [Form components](#form-components)
     - [Input](#input)
     - [Select](#select)
     - [Textarea](#textarea)
     - [Datetime](#datetime)
-    - [Back](#back)
-- [Modal](#modal)
+- [Back](#back)
+
 
 ## Button
 
@@ -86,7 +87,7 @@ light-success  => bg-green-200 text-green-600 ring-green-200 focus:border-green-
 ```css
 w-full mt-2 sm:mt-4 md:mt-6 bg-white shadow-md overflow-hidden rounded-lg
 ```
-
+## Form Components
 ## Input
 ####  Type
 

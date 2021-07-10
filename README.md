@@ -31,7 +31,7 @@ Simple laravel essentials to kik start your new project. :rocket:
 
 ## Button
 
-####  Type
+####  Button Type
 ```vue
 <x-button buttonType="primary" />
 ```
@@ -51,6 +51,12 @@ danger-light   => bg-red-200 text-red-600 ring-red-200 focus:border-red-300 acti
 light          => bg-gray-200 text-gray-600 ring-gray-200 focus:border-gray-300 active:bg-gray-300
 light-success  => bg-green-200 text-green-600 ring-green-200 focus:border-green-300 active:bg-green-300 border-green-300 border-opacity-60
 ```
+####  Type
+```vue
+<x-button type="submit" />
+```
+
+> Default: `button`
 
 ####  Height
 ```vue
@@ -58,6 +64,20 @@ light-success  => bg-green-200 text-green-600 ring-green-200 focus:border-green-
 ```
 
 > Default: `h-10`
+
+####  Padding
+```vue
+<x-button padding="px-6 py-2" />
+```
+
+> Default: `px-2.5`
+
+####  Value
+```vue
+<x-button value="Update" />
+```
+
+> Default: `// Empty`
 
 ## Cards
 

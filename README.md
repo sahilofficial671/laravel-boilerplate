@@ -251,14 +251,23 @@ warning   =>  icon_classes => text-yellow-600,  'icon_container_class' => 'bg-ye
 success   =>  icon_classes => text-green-600, 'icon_container_class' => 'bg-green-100'  
 ```
 
-####  Cancel
+####  Default Cancel
 
 ```vue
-<x-modal cancel="Discard" />
+<x-modal defaultCancel="false" />
+```
+
+> Default: `true`
+> It will show/hide default cancel text
+
+####  Default Cancel Texh
+
+```vue
+<x-modal defaultCancelText="Close" />
 ```
 
 > Default: `Cancel`
-> It is the text of button which hides the modal
+> It will change default cancel text
 
 ####  Toggle
 

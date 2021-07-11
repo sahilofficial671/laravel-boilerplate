@@ -1,6 +1,5 @@
 @props([
     'buttonType' => 'primary',
-    'type'       => 'button',
     'height'     => 'h-10',
     'padding'    => 'px-2.5',
     'disabled'   => false,
@@ -39,6 +38,6 @@
     }
 @endphp
 
-<button type="{!! $type !!}" {{ $attributes->merge(['class' => $class, 'disabled' => $disabled]) }}>
+<button {{ $attributes->merge(['class' => $class, 'disabled' => $disabled]) }}>
     {{ $slot }}{!! $value !!}
 </button>
